@@ -17,6 +17,19 @@ export const Route = createFileRoute("/shop")({
       { property: "og:title", content: "Shop - Kenavid Couture" },
       { property: "og:description", content: "Browse the bespoke menswear collection." },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          name: "Shop - Kenavid Couture",
+          description:
+            "Browse the Kenavid Couture collection - agbada, kaftan, casual wear and signature monogram designs.",
+          url: "https://kenavidcouture.com/shop",
+        }),
+      },
+    ],
   }),
   component: ShopPage,
 });

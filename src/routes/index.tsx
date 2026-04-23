@@ -45,6 +45,25 @@ export const Route = createFileRoute("/")({
             telephone: "+234 803 459 3315",
             contactType: "customer service",
           },
+          sameAs: [
+            "https://instagram.com/kenavidcouture",
+            "https://facebook.com/kenavidcouture",
+            "https://twitter.com/kenavidcouture",
+          ],
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "Kenavid Couture",
+          url: "https://kenavidcouture.com",
+          potentialAction: {
+            "@type": "SearchAction",
+            target: "https://kenavidcouture.com/shop?q={search_term_string}",
+            "query-input": "required name=search_term_string",
+          },
         }),
       },
     ],

@@ -35,10 +35,17 @@ export const Route = createFileRoute("/product/$id")({
               name: loaderData.product.name,
               image: loaderData.product.image,
               description: loaderData.product.description,
+              brand: {
+                "@type": "Brand",
+                name: "Kenavid Couture",
+              },
               offers: {
                 "@type": "AggregateOffer",
                 lowPrice: loaderData.product.priceFrom,
+                highPrice: loaderData.product.priceTo,
                 priceCurrency: "NGN",
+                availability: "https://schema.org/InStock",
+                url: `https://kenavidcouture.com/product/${loaderData.product.id}`,
               },
             }),
           },

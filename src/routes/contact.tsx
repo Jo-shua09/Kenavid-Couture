@@ -15,6 +15,32 @@ export const Route = createFileRoute("/contact")({
       { property: "og:title", content: "Contact - Kenavid Couture" },
       { property: "og:description", content: "Visit our Lagos atelier or chat on WhatsApp." },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: "Kenavid Couture Atelier",
+          image: "https://kenavidcouture.com/logo.png",
+          telephone: "+2348034593315",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "7, Prince Ola Street, Seliat busstop, Idimu road",
+            addressLocality: "Egbeda",
+            addressRegion: "Lagos",
+            addressCountry: "NG",
+          },
+          openingHoursSpecification: {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            opens: "08:00",
+            closes: "19:00",
+          },
+          url: "https://kenavidcouture.com/contact",
+        }),
+      },
+    ],
   }),
   component: ContactPage,
 });

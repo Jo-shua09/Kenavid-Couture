@@ -1,69 +1,57 @@
-# React + TypeScript + Vite
+# Kenavid Couture
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Kenavid Couture is a premium e-commerce web application designed for a high-end fashion brand. Built with React, TypeScript, and Vite, it offers a seamless shopping experience with a focus on performance and elegant UI.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design:** Optimized for mobile, tablet, and desktop views.
+- **Product Catalog:** Dynamic browsing of fashion collections with filtering and sorting.
+- **Shopping Cart:** Real-time cart management with persistent storage.
+- **Secure Checkout:** Integrated payment gateway simulation.
+- **User Authentication:** Secure login and profile management.
+- **Performance:** Fast load times powered by Vite and optimized asset delivery.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Frontend:** React 18, TypeScript
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS / Styled Components
+- **State Management:** Context API / Redux Toolkit
+- **Linting:** ESLint (Type-aware configuration)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📦 Installation
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+1. **Clone the repository:**
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+   ```bash
+   git clone https://github.com/Joshua/Kenavid-Couture.git
+   cd Kenavid-Couture
+   ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. **Install dependencies:**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+   ```bash
+   npm install
+   ```
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+3. **Start the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+## 📁 Project Structure
+
+- `/src/components`: Reusable UI components.
+- `/src/pages`: Main application views (Home, Shop, Product Details).
+- `/src/hooks`: Custom React hooks for logic reuse.
+- `/src/assets`: Images, fonts, and global styles.
+
+## 📄 License
+
+This project is licensed under the MIT License.

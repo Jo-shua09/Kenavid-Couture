@@ -9,6 +9,7 @@ export const Route = createFileRoute("/cart")({
     meta: [
       { title: "Cart - Kenavid Couture" },
       { name: "description", content: "Review your selections and check out via WhatsApp." },
+      { name: "robots", content: "noindex, nofollow" },
     ],
   }),
   component: CartPage,

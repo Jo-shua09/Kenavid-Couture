@@ -9,6 +9,7 @@ export const Route = createFileRoute("/wishlist")({
     meta: [
       { title: "Wishlist - Kenavid Couture" },
       { name: "description", content: "Your saved Kenavid Couture pieces." },
+      { name: "robots", content: "noindex, nofollow" },
     ],
   }),
   component: WishlistPage,
