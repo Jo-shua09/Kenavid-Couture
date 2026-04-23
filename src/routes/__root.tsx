@@ -10,6 +10,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
+import logo from "@/assets/icon.jpg";
 
 function GlobalLoader() {
   return (
@@ -89,6 +90,7 @@ export const Route = createRootRoute({
       { name: "twitter:image", content: "https://kenavidcouture.com/og-image.jpg" },
     ],
     links: [
+      { rel: "icon", type: "image/png", href: logo },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
