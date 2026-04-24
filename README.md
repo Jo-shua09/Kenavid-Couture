@@ -14,7 +14,7 @@ Kenavid Couture is a premium e-commerce web application designed for a high-end 
 ## 🛠️ Tech Stack
 
 - **Frontend:** React 19, TypeScript
-- **Framework:** TanStack Start (SSR)
+- **Framework:** TanStack Router (SPA)
 - **Build Tool:** Vite
 - **Styling:** Tailwind CSS v4
 - **State Management:** Zustand
@@ -52,10 +52,10 @@ This project is configured for seamless deployment on Vercel:
 
 1. Push your code to a GitHub repository.
 2. Import the repository in the [Vercel Dashboard](https://vercel.com/dashboard).
-3. Vercel will auto-detect the TanStack Start framework preset.
+3. Select **Vite** as the Framework Preset.
 4. Click **Deploy**.
 
-> **Note:** The `vercel.json` is intentionally left empty (`{}`) so that TanStack Start's Vercel preset handles routing and SSR automatically.
+> **Note:** The `vercel.json` includes a rewrite rule to redirect all traffic to `index.html` to support client-side routing.
 
 ## 📁 Project Structure
 

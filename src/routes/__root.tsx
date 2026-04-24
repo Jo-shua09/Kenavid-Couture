@@ -103,24 +103,9 @@ export const Route = createRootRoute({
       ],
     };
   },
-  shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
 });
-
-function RootShell({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="en" className="dark">
-      <head>
-        <HeadContent />
-      </head>
-      <body>
-        {children}
-        <Scripts />
-      </body>
-    </html>
-  );
-}
 
 function RootComponent() {
   const isNavigating = useRouterState({ select: (s) => s.status === "pending" });
@@ -131,13 +116,17 @@ function RootComponent() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col bg-background text-foreground">
-      <AnimatePresence>{mounted && isNavigating && <GlobalLoader />}</AnimatePresence>
-      <Navbar />
-      <main className="flex-1">
-        <Outlet />
-      </main>
-      <Footer />
-    </div>
+    <>
+      <HeadContent />
+      <div className="min-h-screen flex flex-col bg-background text-foreground">
+        <AnimatePresence>{mounted && isNavigating && <GlobalLoader />}</AnimatePresence>
+        <Navbar />
+        <main className="flex-1">
+          <Outlet />
+        </main>
+        <Footer />
+      </div>
+      <Scripts />
+    </>
   );
 }
