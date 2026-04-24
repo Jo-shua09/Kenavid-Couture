@@ -5,7 +5,7 @@ import {
   Scripts,
   useRouterState,
 } from "@tanstack/react-router";
-import appCss from "../styles.css?url";
+import "../styles.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { motion, AnimatePresence } from "framer-motion";
@@ -89,7 +89,6 @@ export const Route = createRootRoute({
       meta: [
         // Dynamic meta overrides for nested routes can be placed here in the future
       ],
-      links: [{ rel: "stylesheet", href: appCss }],
     };
   },
   component: RootComponent,
@@ -99,16 +98,23 @@ export const Route = createRootRoute({
 function RootComponent() {
   const isNavigating = useRouterState({ select: (s) => s.status === "pending" });
   const [mounted, setMounted] = useState(false);
+  const [initialLoading, setInitialLoading] = useState(true);
 
   useEffect(() => {
     setMounted(true);
+    const timer = setTimeout(() => {
+      setInitialLoading(false);
+    }, 2000);
+    return () => clearTimeout(timer);
   }, []);
 
   return (
     <>
       <HeadContent />
       <div className="min-h-screen flex flex-col bg-background text-foreground">
-        <AnimatePresence>{mounted && isNavigating && <GlobalLoader />}</AnimatePresence>
+        <AnimatePresence>
+          {mounted && (initialLoading || isNavigating) && <GlobalLoader />}
+        </AnimatePresence>
         <Navbar />
         <main className="flex-1">
           <Outlet />
