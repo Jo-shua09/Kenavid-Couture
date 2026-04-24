@@ -12,10 +12,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import logo from "@/assets/icon.jpg";
 
-function GlobalLoader() {
+function GlobalLoader({ isInitial }: { isInitial?: boolean }) {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
+      initial={{ opacity: isInitial ? 1 : 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.4, ease: "easeInOut" }}
@@ -97,11 +97,9 @@ export const Route = createRootRoute({
 
 function RootComponent() {
   const isNavigating = useRouterState({ select: (s) => s.status === "pending" });
-  const [mounted, setMounted] = useState(false);
   const [initialLoading, setInitialLoading] = useState(true);
 
   useEffect(() => {
-    setMounted(true);
     const timer = setTimeout(() => {
       setInitialLoading(false);
     }, 2000);
@@ -113,7 +111,7 @@ function RootComponent() {
       <HeadContent />
       <div className="min-h-screen flex flex-col bg-background text-foreground">
         <AnimatePresence>
-          {mounted && (initialLoading || isNavigating) && <GlobalLoader />}
+          {(initialLoading || isNavigating) && <GlobalLoader isInitial={initialLoading} />}
         </AnimatePresence>
         <Navbar />
         <main className="flex-1">
