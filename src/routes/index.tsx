@@ -77,7 +77,7 @@ function HomePage() {
   return (
     <div>
       {/* HERO */}
-      <section className="relative min-h-screen flex items-end overflow-hidden bg-black">
+      <section className="relative min-h-screen flex items-center overflow-hidden bg-black">
         <div className="absolute inset-0">
           <video
             src={heroVideo}
@@ -93,7 +93,7 @@ function HomePage() {
           <div className="absolute inset-0 bg-black/30" />
         </div>
 
-        <div className="relative container mx-auto px-5 lg:px-8 pb-24 pt-5 md:pt-40 grid gap-10 lg:grid-cols-12 items-start border">
+        <div className="relative container mx-auto px-5 lg:px-8 pb-24 pt-5 md:pt-40 grid gap-10 lg:grid-cols-12 items-end border">
           <div className="lg:col-span-8 space-y-4">
             <motion.span
               initial={{ opacity: 0, y: 20 }}
