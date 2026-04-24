@@ -1,6 +1,6 @@
 # Kenavid Couture
 
-Kenavid Couture is a premium e-commerce web application designed for a high-end fashion brand. Built with React, TypeScript, and Vite, it offers a seamless shopping experience with a focus on performance and elegant UI.
+Kenavid Couture is a premium e-commerce web application designed for a high-end fashion brand. Built with React, TypeScript, TanStack Start, and Vite, it offers a seamless shopping experience with a focus on performance and elegant UI.
 
 ## 🚀 Features
 
@@ -13,10 +13,11 @@ Kenavid Couture is a premium e-commerce web application designed for a high-end 
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React 18, TypeScript
+- **Frontend:** React 19, TypeScript
+- **Framework:** TanStack Start (SSR)
 - **Build Tool:** Vite
-- **Styling:** Tailwind CSS / Styled Components
-- **State Management:** Context API / Redux Toolkit
+- **Styling:** Tailwind CSS v4
+- **State Management:** Zustand
 - **Linting:** ESLint (Type-aware configuration)
 
 ## 📦 Installation
@@ -45,12 +46,24 @@ Kenavid Couture is a premium e-commerce web application designed for a high-end 
    npm run build
    ```
 
+## 🌐 Deploy to Vercel
+
+This project is configured for seamless deployment on Vercel:
+
+1. Push your code to a GitHub repository.
+2. Import the repository in the [Vercel Dashboard](https://vercel.com/dashboard).
+3. Vercel will auto-detect the TanStack Start framework preset.
+4. Click **Deploy**.
+
+> **Note:** The `vercel.json` is intentionally left empty (`{}`) so that TanStack Start's Vercel preset handles routing and SSR automatically.
+
 ## 📁 Project Structure
 
 - `/src/components`: Reusable UI components.
-- `/src/pages`: Main application views (Home, Shop, Product Details).
+- `/src/routes`: TanStack Router file-based routes.
 - `/src/hooks`: Custom React hooks for logic reuse.
 - `/src/assets`: Images, fonts, and global styles.
+- `/public`: Static files served at the root (robots.txt, sitemap.xml, favicon, logo).
 
 ## 📄 License
 
