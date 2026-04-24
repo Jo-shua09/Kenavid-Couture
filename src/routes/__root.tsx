@@ -20,15 +20,53 @@ function GlobalLoader() {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3 }}
       className="fixed inset-0 z-[100] flex items-center justify-center bg-background/90 backdrop-blur-md"
+      transition={{ duration: 0.4, ease: "easeInOut" }}
+      className="fixed inset-0 z-[100] flex items-center justify-center bg-background/95 backdrop-blur-md"
     >
       <div className="flex flex-col items-center gap-6">
         <div className="relative h-16 w-16">
           <div className="absolute inset-0 rounded-full border-2 border-gold/20" />
           <div className="absolute inset-0 rounded-full border-t-2 border-gold animate-spin" />
+      <div className="flex flex-col items-center gap-8">
+        <div className="relative flex items-center justify-center w-24 h-24">
+          {/* Outer delicate spinning rings */}
+          <motion.div
+            animate={{ rotate: 360 }}
+            transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
+            className="absolute inset-0 rounded-full border border-transparent border-t-gold/80 border-r-gold/30"
+          />
+          <motion.div
+            animate={{ rotate: -360 }}
+            transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
+            className="absolute inset-2 rounded-full border border-transparent border-b-gold/60 border-l-gold/20"
+          />
+          {/* Central Logo with breathing animation */}
+          <motion.div
+            animate={{ scale: [0.95, 1.05, 0.95], opacity: [0.8, 1, 0.8] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            className="relative h-16 w-16 overflow-hidden rounded-full ring-1 ring-gold/20 shadow-[0_0_15px_rgba(212,175,55,0.15)]"
+          >
+            <img src={logo} alt="Kenavid Couture" className="h-full w-full object-cover" />
+          </motion.div>
         </div>
         <span className="font-display text-[10px] tracking-[0.4em] text-gold uppercase animate-pulse">
           Kenavid
         </span>
+        
+        {/* Brand Text & Sleek Progress Line */}
+        <div className="flex flex-col items-center gap-4">
+          <span className="font-display text-[11px] tracking-[0.5em] text-gold uppercase pl-1">
+            Kenavid
+          </span>
+          <div className="h-[1px] w-16 bg-gold/20 relative overflow-hidden">
+            <motion.div
+              initial={{ x: "-100%" }}
+              animate={{ x: "200%" }}
+              transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+              className="absolute inset-0 w-1/2 bg-gold"
+            />
+          </div>
+        </div>
       </div>
     </motion.div>
   );
