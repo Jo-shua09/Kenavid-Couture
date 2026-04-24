@@ -58,49 +58,9 @@ export const Route = createRootRoute({
   head: () => {
     return {
       meta: [
-        { charSet: "utf-8" },
-        { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { title: "Kenavid Couture - Bespoke Male Fashion | Clothes That Matter" },
-        {
-          name: "description",
-          content:
-            "Kenavid Couture is a luxury bespoke male fashion house in Lagos, Nigeria - crafting agbada, kaftan and tailored menswear with mastery and intention.",
-        },
-        {
-          name: "keywords",
-          content:
-            "bespoke menswear, agbada, kaftan, tailored suits, lagos fashion, Kenavid Couture, luxury african menswear, men's fashion nigeria, custom tailoring",
-        },
-        { name: "author", content: "Kenavid Couture" },
-        { name: "robots", content: "index, follow" },
-        { name: "theme-color", content: "#000000" },
-
-        // Open Graph / Facebook
-        { property: "og:title", content: "Kenavid Couture - Bespoke Male Fashion" },
-        { property: "og:description", content: "Luxury bespoke menswear. Clothes That Matter." },
-        { property: "og:type", content: "website" },
-        { property: "og:url", content: "https://kenavidcouture.com" },
-        { property: "og:image", content: "https://kenavidcouture.com/logo.png" },
-        { property: "og:site_name", content: "Kenavid Couture" },
-
-        // Twitter
-        { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:site", content: "@kenavidcouture" },
-        { name: "twitter:title", content: "Kenavid Couture - Bespoke Male Fashion" },
-        { name: "twitter:description", content: "Luxury bespoke menswear. Clothes That Matter." },
-        { name: "twitter:image", content: "https://kenavidcouture.com/logo.png" },
+        // Dynamic meta overrides for nested routes can be placed here in the future
       ],
-      links: [
-        { rel: "canonical", href: "https://kenavidcouture.com" },
-        { rel: "icon", type: "image/png", href: logo },
-        { rel: "preconnect", href: "https://fonts.googleapis.com" },
-        { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-        {
-          rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap",
-        },
-        { rel: "stylesheet", href: appCss },
-      ],
+      links: [{ rel: "stylesheet", href: appCss }],
     };
   },
   component: RootComponent,
