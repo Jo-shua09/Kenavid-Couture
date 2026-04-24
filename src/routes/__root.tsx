@@ -18,15 +18,9 @@ function GlobalLoader() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 0.3 }}
-      className="fixed inset-0 z-[100] flex items-center justify-center bg-background/90 backdrop-blur-md"
       transition={{ duration: 0.4, ease: "easeInOut" }}
       className="fixed inset-0 z-[100] flex items-center justify-center bg-background/95 backdrop-blur-md"
     >
-      <div className="flex flex-col items-center gap-6">
-        <div className="relative h-16 w-16">
-          <div className="absolute inset-0 rounded-full border-2 border-gold/20" />
-          <div className="absolute inset-0 rounded-full border-t-2 border-gold animate-spin" />
       <div className="flex flex-col items-center gap-8">
         <div className="relative flex items-center justify-center w-24 h-24">
           {/* Outer delicate spinning rings */}
@@ -49,10 +43,7 @@ function GlobalLoader() {
             <img src={logo} alt="Kenavid Couture" className="h-full w-full object-cover" />
           </motion.div>
         </div>
-        <span className="font-display text-[10px] tracking-[0.4em] text-gold uppercase animate-pulse">
-          Kenavid
-        </span>
-        
+
         {/* Brand Text & Sleek Progress Line */}
         <div className="flex flex-col items-center gap-4">
           <span className="font-display text-[11px] tracking-[0.5em] text-gold uppercase pl-1">
