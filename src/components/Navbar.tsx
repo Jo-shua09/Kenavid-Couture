@@ -180,7 +180,8 @@ export function Navbar() {
                   rel="noreferrer"
                   className="flex items-center gap-3 hover:text-gold transition"
                 >
-                  <AtSign className="h-4 w-4 text-gold" /> @Ken.avidcouture
+                  <AtSign className="h-4 w-4 text-gold" />
+                  Ken.avidcouture
                 </a>
                 <p className="pt-4 text-[10px] tracking-[0.4em] uppercase text-gold/60">
                   Clothes That Matter
