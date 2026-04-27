@@ -145,7 +145,7 @@ export function Navbar() {
                           active ? "text-gold" : "text-foreground"
                         }`}
                       >
-                        <span className="font-display text-4xl sm:text-5xl tracking-tight">
+                        <span className="font-display text-2xl sm:text-4xl tracking-tight">
                           {l.label}
                         </span>
                         <span className="text-[10px] tracking-[0.4em] uppercase text-gold/60">
