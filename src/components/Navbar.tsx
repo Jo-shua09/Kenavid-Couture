@@ -175,12 +175,12 @@ export function Navbar() {
                   <span>7 Prince Ola St, Idimu Rd, Egbeda, Lagos</span>
                 </div>
                 <a
-                  href="https://instagram.com"
+                  href="https://instagram.com/Ken.avidcouture"
                   target="_blank"
                   rel="noreferrer"
                   className="flex items-center gap-3 hover:text-gold transition"
                 >
-                  <AtSign className="h-4 w-4 text-gold" /> @kenavidcouture
+                  <AtSign className="h-4 w-4 text-gold" /> @Ken.avidcouture
                 </a>
                 <p className="pt-4 text-[10px] tracking-[0.4em] uppercase text-gold/60">
                   Clothes That Matter

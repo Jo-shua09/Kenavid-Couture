@@ -62,8 +62,13 @@ export function Footer() {
               </a>
             </li>
             <li>
-              <a href="#" className="inline-flex items-center gap-2 hover:text-gold">
-                <AtSign className="h-4 w-4 text-gold" /> @kenavidcouture
+              <a
+                href="https://instagram.com/Ken.avidcouture"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 hover:text-gold"
+              >
+                <AtSign className="h-4 w-4 text-gold" />Ken.avidcouture
               </a>
             </li>
           </ul>

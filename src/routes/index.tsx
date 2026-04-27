@@ -26,7 +26,7 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "Organization",
           name: "Kenavid Couture",
-          url: "https://kenavidcouture.com",
+          url: "https://kenavidcouture.vercel.app",
           description:
             "Bespoke male fashion crafted in Lagos. Agbada, kaftan & couture menswear that tells your story.",
           foundingDate: "2021",
@@ -58,10 +58,10 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "WebSite",
           name: "Kenavid Couture",
-          url: "https://kenavidcouture.com",
+          url: "https://kenavidcouture.vercel.app",
           potentialAction: {
             "@type": "SearchAction",
-            target: "https://kenavidcouture.com/shop?q={search_term_string}",
+            target: "https://kenavidcouture.vercel.app/shop?q={search_term_string}",
             "query-input": "required name=search_term_string",
           },
         }),
