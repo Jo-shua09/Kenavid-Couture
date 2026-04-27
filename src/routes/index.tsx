@@ -42,11 +42,11 @@ export const Route = createFileRoute("/")({
           },
           contactPoint: {
             "@type": "ContactPoint",
-            telephone: "+234 803 459 3315",
+            telephone: ["+234 803 459 3315", "+234 704 985 2224"],
             contactType: "customer service",
           },
           sameAs: [
-            "https://instagram.com/kenavidcouture",
+            "https://instagram.com/Ken.avidcouture",
             "https://facebook.com/kenavidcouture",
             "https://twitter.com/kenavidcouture",
           ],

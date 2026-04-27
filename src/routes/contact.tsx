@@ -23,7 +23,7 @@ export const Route = createFileRoute("/contact")({
           "@type": "LocalBusiness",
           name: "Kenavid Couture Atelier",
           image: "https://kenavidcouture.com/logo.png",
-          telephone: "+2348034593315",
+          telephone: ["+234 803 459 3315", "+234 704 985 2224"],
           address: {
             "@type": "PostalAddress",
             streetAddress: "7, Prince Ola Street, Seliat busstop, Idimu road",
