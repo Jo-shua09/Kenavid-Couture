@@ -228,12 +228,12 @@ export const products: Product[] = [
   {
     id: "kaftan-teal-medallion",
     name: "Teal Medallion Kaftan Robe",
-    category: "Kaftan",
+    category: "Agbada",
     image: kaftanTealMedallion,
-    priceFrom: 80000,
-    priceTo: 80000,
+    priceFrom: 150000,
+    priceTo: 150000,
     description:
-      "Flowing teal kaftan robe with intricate ivory medallion embroidery across the chest and a signature crest at the waist.",
+      "Flowing teal Agbada robe with intricate ivory medallion embroidery across the chest and a signature crest at the waist.",
     details: [
       "Premium teal crepe fabric",
       "Hand-embroidered ivory medallions",
