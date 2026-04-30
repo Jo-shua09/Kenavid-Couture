@@ -1,27 +1,20 @@
-import agbadaBronze from "@/assets/products/agbada-bronze.jpg";
-import agbadaCrimson from "@/assets/products/agbada-crimson.jpg";
-import agbadaPearl from "@/assets/products/agbada-pearl.jpg";
-import agbadaOnyx from "@/assets/products/agbada-onyx.jpg";
-import agbadaChampagne from "@/assets/products/agbada-champagne.jpg";
-import agbadaRoyalBlue from "@/assets/products/agbada-royal-blue.jpg";
-import agbadaBurgundy from "@/assets/products/agbada-burgundy.jpg";
-import agbadaForest from "@/assets/products/agbada-forest.jpg";
-import kaftanCocoa from "@/assets/products/kaftan-cocoa.jpg";
-import kaftanEmerald from "@/assets/products/kaftan-emerald.jpg";
-import kaftanNavy from "@/assets/products/kaftan-navy.jpg";
-import kaftanSand from "@/assets/products/kaftan-sand.jpg";
-import kaftanOxblood from "@/assets/products/kaftan-oxblood.jpg";
-import casualIvory from "@/assets/products/casual-ivory.jpg";
-import casualStone from "@/assets/products/casual-stone.jpg";
-
-import agbadaMidnight from "@/assets/products/agbada-midnight.jpg";
-import agbadaWhite from "@/assets/products/agbada-white.jpg";
-import kaftanCharcoal from "@/assets/products/kaftan-charcoal.jpg";
-import kaftanTealMedallion from "@/assets/products/kaftan-teal-medallion.jpg";
-import senatorNavyDuo from "@/assets/products/senator-navy-blue-duo.jpg";
+import agbadaPearlArch from "@/assets/products/agbada-pearl-arch.jpg";
+import agbadaSilverZigzag from "@/assets/products/agbada-silver-zigzag.jpg";
+import agbadaOliveCircuit from "@/assets/products/agbada-olive-circuit.jpg";
+import agbadaOlivePebble from "@/assets/products/agbada-olive-pebble.jpg";
+import agbadaBurgundyImperial from "@/assets/products/agbada-burgundy-imperial.jpg";
+import agbadaAmberProfile from "@/assets/products/agbada-amber-profile.jpg";
+import agbadaIvoryNoir from "@/assets/products/agbada-ivory-noir.jpg";
 import agbadaSandMosaic from "@/assets/products/agbada-sand-mosaic.jpg";
 import agbadaCreamMedallion from "@/assets/products/agbada-cream-medallion.jpg";
+import kaftanForestZigzag from "@/assets/products/kaftan-forest-zigzag.jpg";
+import kaftanEspressoBraid from "@/assets/products/kaftan-espresso-braid.jpg";
+import kaftanTealMedallion from "@/assets/products/kaftan-teal-medallion.jpg";
+import casualEspressoMonogram from "@/assets/products/casual-espresso-monogram.jpg";
+import senatorNavyDuo from "@/assets/products/senator-navy-blue-duo.jpg";
 import senatorRosePocket from "@/assets/products/senator-rose-pocket.jpg";
+import agbadaNoirVisage from "@/assets/products/agbada-noir-visage.jpg";
+import kaftanNoirStar from "@/assets/products/kaftan-noir-star.jpg";
 
 export type Category = "Agbada" | "Kaftan" | "Casual Wear";
 
@@ -37,318 +30,117 @@ export interface Product {
 }
 
 export const products: Product[] = [
+  // ============ AGBADA — From ₦150,000 ============
   {
-    id: "agbada-bronze-regalia",
-    name: "Bronze Regalia Agbada",
+    id: "agbada-pearl-arch",
+    name: "Pearl Arch Agbada",
     category: "Agbada",
-    image: agbadaBronze,
-    priceFrom: 320000,
-    priceTo: 450000,
+    image: agbadaPearlArch,
+    priceFrom: 150000,
+    priceTo: 150000,
     description:
-      "A statement three-piece agbada in rich bronze damask, hand-embroidered with our signature gold motifs across the chest panel.",
+      "Soft pearl-grey agbada with an elegant tonal arch motif embroidered across the chest panel — quiet, ceremonial luxury.",
     details: [
-      "Premium imported damask fabric",
-      "Hand embroidery — 40+ hours of craftsmanship",
-      "Includes flowing robe, inner kaftan & matching trousers",
-      "Bespoke fit — tailored to your measurements",
+      "Premium pearl-grey crepe fabric",
+      "Tonal arch embroidery",
+      "Three-piece set (robe, kaftan, trousers)",
+      "Bespoke made-to-measure tailoring",
     ],
   },
   {
-    id: "agbada-crimson-royale",
-    name: "Crimson Royale Agbada",
+    id: "agbada-silver-zigzag",
+    name: "Silver Chevron Agbada",
     category: "Agbada",
-    image: agbadaCrimson,
-    priceFrom: 380000,
-    priceTo: 520000,
+    image: agbadaSilverZigzag,
+    priceFrom: 150000,
+    priceTo: 150000,
     description:
-      "Regal crimson agbada with intricate tonal embroidery and crystal-stoned panels — fit for kings and milestone celebrations.",
+      "Silver-grey agbada with a bold tan chevron embroidered chest panel — modern geometry meets heritage tailoring.",
     details: [
-      "Premium velvet & silk blend",
-      "Crystal-stone embellished detailing",
-      "Matching fila (cap) included",
-      "Made-to-order in 3–4 weeks",
-    ],
-  },
-  {
-    id: "agbada-pearl-aristocrat",
-    name: "Pearl Aristocrat Agbada",
-    category: "Agbada",
-    image: agbadaPearl,
-    priceFrom: 420000,
-    priceTo: 580000,
-    description:
-      "Pristine ivory agbada studded with golden floral appliqués — our most requested wedding piece.",
-    details: [
-      "Hand-applied gold floral appliqués",
-      "Stoned full front panel",
-      "Includes matching cap",
-      "Bespoke groom-ready tailoring",
-    ],
-  },
-  {
-    id: "agbada-onyx-noir",
-    name: "Onyx Noir Agbada",
-    category: "Agbada",
-    image: agbadaOnyx,
-    priceFrom: 290000,
-    priceTo: 410000,
-    description:
-      "Tonal black-on-black agbada with raised damask weave — quiet luxury at its finest.",
-    details: [
-      "All-black tonal damask",
-      "Subtle textured embroidery",
-      "Perfect for evening events",
-      "Tailored from premium imported fabric",
-    ],
-  },
-  {
-    id: "agbada-champagne-ascot",
-    name: "Champagne Ascot Agbada",
-    category: "Agbada",
-    image: agbadaChampagne,
-    priceFrom: 340000,
-    priceTo: 470000,
-    description:
-      "Soft champagne flowing agbada with a multi-tonal hand-embroidered crest — refined and unforgettable.",
-    details: [
-      "Champagne silk-touch fabric",
-      "Multi-color hand embroidery",
-      "Soft drape, structured shoulders",
-      "Custom turban styling available",
-    ],
-  },
-  {
-    id: "agbada-royal-blue-empire",
-    name: "Royal Blue Empire Agbada",
-    category: "Agbada",
-    image: agbadaRoyalBlue,
-    priceFrom: 360000,
-    priceTo: 490000,
-    description:
-      "Royal blue agbada with a striking baroque-gold front panel — commanding presence guaranteed.",
-    details: [
-      "Royal blue silk-blend fabric",
-      "Baroque gold thread embroidery",
+      "Premium silver-grey fabric",
+      "Hand-embroidered chevron crest",
       "Three-piece set",
-      "Bespoke measurements",
-    ],
-  },
-  {
-    id: "kaftan-cocoa-heritage",
-    name: "Cocoa Heritage Kaftan",
-    category: "Kaftan",
-    image: kaftanCocoa,
-    priceFrom: 145000,
-    priceTo: 210000,
-    description:
-      "Modern slim-fit kaftan in deep cocoa with golden equestrian embroidery on the chest pocket.",
-    details: [
-      "Premium cashmere-blend fabric",
-      "Gold thread chest emblem",
-      "Two-piece (top + trouser)",
-      "Slim contemporary cut",
-    ],
-  },
-  {
-    id: "kaftan-emerald-monogram",
-    name: "Emerald Monogram Kaftan",
-    category: "Kaftan",
-    image: kaftanEmerald,
-    priceFrom: 175000,
-    priceTo: 240000,
-    description:
-      "Lustrous emerald kaftan with all-over signature monogram weave — modern luxury reimagined.",
-    details: [
-      "Silk-touch monogram jacquard",
-      "Statement gold placket",
-      "Relaxed regal silhouette",
       "Made-to-measure",
     ],
   },
   {
-    id: "kaftan-navy-diplomat",
-    name: "Navy Diplomat Kaftan",
-    category: "Kaftan",
-    image: kaftanNavy,
-    priceFrom: 135000,
-    priceTo: 195000,
-    description:
-      "Sharp navy kaftan with gold mandarin collar accent — refined for boardrooms and ceremonies alike.",
-    details: [
-      "Italian wool-blend",
-      "Gold-trim mandarin collar",
-      "Tailored slim fit",
-      "Two-piece set",
-    ],
-  },
-  {
-    id: "casual-ivory-resort",
-    name: "Ivory Resort Senator",
-    category: "Casual Wear",
-    image: casualIvory,
-    priceFrom: 95000,
-    priceTo: 140000,
-    description:
-      "Crisp ivory short-sleeve senator set — effortless luxury for daytime occasions and travel.",
-    details: [
-      "Breathable linen-cotton blend",
-      "Subtle gold detail at chest",
-      "Two-piece (shirt + trouser)",
-      "Tailored relaxed fit",
-    ],
-  },
-  {
-    id: "agbada-burgundy-sovereign",
-    name: "Burgundy Sovereign Agbada",
+    id: "agbada-olive-circuit",
+    name: "Olive Circuit Agbada",
     category: "Agbada",
-    image: agbadaBurgundy,
-    priceFrom: 350000,
-    priceTo: 480000,
+    image: agbadaOliveCircuit,
+    priceFrom: 150000,
+    priceTo: 150000,
     description:
-      "Deep wine-toned agbada with cascading gold filigree across the chest panel — a sovereign statement piece.",
+      "Earthy olive agbada anchored by a circular medallion crest with golden centerpiece — heritage craftsmanship reimagined.",
     details: [
-      "Premium wine-toned damask",
-      "Hand-stitched gold filigree",
-      "Includes robe, kaftan & trousers",
-      "Made-to-measure tailoring",
-    ],
-  },
-  {
-    id: "agbada-forest-heritage",
-    name: "Forest Heritage Agbada",
-    category: "Agbada",
-    image: agbadaForest,
-    priceFrom: 330000,
-    priceTo: 460000,
-    description:
-      "Forest green agbada with antique-silver and gold thread embroidery — earthy regality, refined.",
-    details: [
-      "Forest green silk-blend damask",
-      "Antique silver & gold embroidery",
+      "Premium olive crepe fabric",
+      "Circular medallion embroidery",
       "Three-piece set",
       "Bespoke fit",
     ],
   },
   {
-    id: "kaftan-sand-meridian",
-    name: "Sand Meridian Kaftan",
-    category: "Kaftan",
-    image: kaftanSand,
-    priceFrom: 125000,
-    priceTo: 180000,
-    description:
-      "Warm sand-toned kaftan with tonal placket embroidery — a quiet, elevated everyday luxury.",
-    details: [
-      "Soft cashmere-touch fabric",
-      "Tonal embroidered placket",
-      "Slim modern silhouette",
-      "Two-piece set",
-    ],
-  },
-  {
-    id: "kaftan-oxblood-prince",
-    name: "Oxblood Prince Kaftan",
-    category: "Kaftan",
-    image: kaftanOxblood,
-    priceFrom: 195000,
-    priceTo: 270000,
-    description:
-      "Oxblood layered kaftan with gold mandarin collar and structured overlay — modern princely tailoring.",
-    details: [
-      "Oxblood jacquard fabric",
-      "Gold-trim mandarin collar",
-      "Layered overlay design",
-      "Custom tailoring",
-    ],
-  },
-  {
-    id: "casual-stone-modernist",
-    name: "Stone Modernist Senator",
-    category: "Casual Wear",
-    image: casualStone,
-    priceFrom: 110000,
-    priceTo: 160000,
-    description:
-      "Light stone gray short-sleeve senator suit — refined ease for daytime ceremonies.",
-    details: ["Premium linen-wool blend", "Crisp tailored cut", "Two-piece set", "Made-to-measure"],
-  },
-  {
-    id: "agbada-midnight-dynasty",
-    name: "Midnight Dynasty Agbada",
+    id: "agbada-olive-pebble",
+    name: "Olive Pebble Agbada",
     category: "Agbada",
-    image: agbadaMidnight,
-    priceFrom: 310000,
-    priceTo: 440000,
+    image: agbadaOlivePebble,
+    priceFrom: 150000,
+    priceTo: 150000,
     description:
-      "Midnight blue agbada with intricate silver crystal embroidery and matching fila — twilight regality.",
+      "Olive agbada featuring a sculpted multi-tone pebble crest framed in fine gold thread — a distinctive signature piece.",
     details: [
-      "Midnight silk-blend damask",
-      "Silver crystal embroidery",
-      "Matching fila included",
+      "Premium olive fabric",
+      "Multi-tone pebble crest",
+      "Gold-thread framing",
       "Three-piece bespoke set",
     ],
   },
   {
-    id: "agbada-white-celestial",
-    name: "Celestial White Agbada",
+    id: "agbada-burgundy-imperial",
+    name: "Burgundy Imperial Agbada",
     category: "Agbada",
-    image: agbadaWhite,
-    priceFrom: 460000,
-    priceTo: 620000,
+    image: agbadaBurgundyImperial,
+    priceFrom: 150000,
+    priceTo: 150000,
     description:
-      "All-white groom agbada with cascading gold scrollwork and beaded chains — for the day that matters most.",
+      "Rich burgundy wool agbada with tonal embroidered crest and matching cap — imperial weight, refined drape.",
     details: [
-      "Pure white silk damask",
-      "Hand-stitched gold scrollwork",
-      "Beaded chain accents",
-      "Wedding-ready bespoke",
+      "Premium burgundy wool blend",
+      "Tonal hand embroidery",
+      "Matching cap included",
+      "Three-piece set",
     ],
   },
   {
-    id: "kaftan-charcoal-minimalist",
-    name: "Charcoal Minimalist Kaftan",
-    category: "Kaftan",
-    image: kaftanCharcoal,
-    priceFrom: 115000,
-    priceTo: 165000,
-    description: "Quiet luxury at its purest — a charcoal slim kaftan stripped to its essentials.",
+    id: "agbada-amber-profile",
+    name: "Amber Heritage Agbada",
+    category: "Agbada",
+    image: agbadaAmberProfile,
+    priceFrom: 150000,
+    priceTo: 150000,
+    description:
+      "Warm amber agbada with a bold heritage crest panel embroidered in tonal gold — a true conversation piece.",
     details: [
-      "Premium silk-touch fabric",
-      "Minimalist tonal placket",
-      "Slim modern fit",
-      "Two-piece set",
+      "Premium amber silk-blend",
+      "Bold embroidered crest panel",
+      "Three-piece set",
+      "Bespoke tailoring",
     ],
   },
   {
-    id: "kaftan-teal-medallion",
-    name: "Teal Medallion Kaftan Robe",
-    category: "Kaftan",
-    image: kaftanTealMedallion,
-    priceFrom: 165000,
-    priceTo: 230000,
+    id: "agbada-ivory-noir",
+    name: "Ivory Noir Agbada",
+    category: "Agbada",
+    image: agbadaIvoryNoir,
+    priceFrom: 150000,
+    priceTo: 150000,
     description:
-      "Flowing teal kaftan robe with intricate ivory medallion embroidery across the chest and a signature crest at the waist.",
+      "Pristine ivory agbada with a striking black geometric panel — a contemporary monochrome statement.",
     details: [
-      "Premium teal crepe fabric",
-      "Hand-embroidered ivory medallions",
-      "Flowing wide-sleeve silhouette",
-      "Made-to-measure tailoring",
-    ],
-  },
-  {
-    id: "senator-navy-blue-duo",
-    name: "Navy & Cobalt Senator Duo",
-    category: "Casual Wear",
-    image: senatorNavyDuo,
-    priceFrom: 130000,
-    priceTo: 185000,
-    description:
-      "Tailored senator set in deep navy with tonal placket embroidery and a structured chest pocket — refined everyday regality.",
-    details: [
-      "Premium suiting fabric",
-      "Tonal embroidered placket",
-      "Structured chest pocket",
-      "Two-piece (top + trouser)",
+      "Premium ivory crepe fabric",
+      "Geometric noir embroidered panel",
+      "Three-piece set",
+      "Made-to-measure",
     ],
   },
   {
@@ -356,8 +148,8 @@ export const products: Product[] = [
     name: "Sand Mosaic Agbada",
     category: "Agbada",
     image: agbadaSandMosaic,
-    priceFrom: 340000,
-    priceTo: 470000,
+    priceFrom: 150000,
+    priceTo: 150000,
     description:
       "Soft sand agbada anchored by a striking tonal mosaic crest — quiet luxury with statement craftsmanship.",
     details: [
@@ -372,8 +164,8 @@ export const products: Product[] = [
     name: "Cream Medallion Agbada",
     category: "Agbada",
     image: agbadaCreamMedallion,
-    priceFrom: 360000,
-    priceTo: 490000,
+    priceFrom: 150000,
+    priceTo: 150000,
     description:
       "Cream agbada framed by an intricate geometric medallion in tonal gold thread — heritage craftsmanship reimagined.",
     details: [
@@ -384,12 +176,128 @@ export const products: Product[] = [
     ],
   },
   {
+    id: "agbada-noir-visage",
+    name: "Noir Visage Agbada",
+    category: "Agbada",
+    image: agbadaNoirVisage,
+    priceFrom: 150000,
+    priceTo: 150000,
+    description:
+      "Bold black agbada featuring a dramatic embroidered visage crest in olive, ivory and charcoal — a true wearable artwork.",
+    details: [
+      "Premium black crepe fabric",
+      "Hand-embroidered visage crest panel",
+      "Three-piece set (robe, top, trousers)",
+      "Bespoke made-to-measure tailoring",
+    ],
+  },
+
+  // ============ KAFTAN — From ₦80,000 ============
+  {
+    id: "kaftan-forest-zigzag",
+    name: "Forest Zigzag Kaftan",
+    category: "Kaftan",
+    image: kaftanForestZigzag,
+    priceFrom: 80000,
+    priceTo: 80000,
+    description:
+      "Deep forest-green kaftan with intricate gold zigzag embroidery running down the placket — refined and statement-making.",
+    details: [
+      "Premium forest-green fabric",
+      "Hand-embroidered gold zigzag placket",
+      "Slim modern silhouette",
+      "Two-piece (top + trouser)",
+    ],
+  },
+  {
+    id: "kaftan-espresso-braid",
+    name: "Espresso Braid Kaftan",
+    category: "Kaftan",
+    image: kaftanEspressoBraid,
+    priceFrom: 80000,
+    priceTo: 80000,
+    description:
+      "Rich espresso kaftan with an intricate braided gold placket — heritage detail in a sleek modern cut.",
+    details: [
+      "Premium espresso fabric",
+      "Hand-stitched braided placket",
+      "Tailored slim fit",
+      "Two-piece set",
+    ],
+  },
+  {
+    id: "kaftan-teal-medallion",
+    name: "Teal Medallion Kaftan Robe",
+    category: "Kaftan",
+    image: kaftanTealMedallion,
+    priceFrom: 80000,
+    priceTo: 80000,
+    description:
+      "Flowing teal kaftan robe with intricate ivory medallion embroidery across the chest and a signature crest at the waist.",
+    details: [
+      "Premium teal crepe fabric",
+      "Hand-embroidered ivory medallions",
+      "Flowing wide-sleeve silhouette",
+      "Made-to-measure tailoring",
+    ],
+  },
+  {
+    id: "kaftan-noir-star",
+    name: "Noir Star Kaftan",
+    category: "Kaftan",
+    image: kaftanNoirStar,
+    priceFrom: 80000,
+    priceTo: 80000,
+    description:
+      "Sleek all-black kaftan with a tonal star-medallion embroidered chest pocket — minimalist quiet luxury at its finest.",
+    details: [
+      "Premium black suiting fabric",
+      "Tonal star-medallion pocket embroidery",
+      "Tailored slim modern fit",
+      "Two-piece (top + trouser)",
+    ],
+  },
+
+  // ============ CASUAL WEAR — From ₦80,000 ============
+  {
+    id: "casual-espresso-monogram",
+    name: "Espresso Monogram Senator",
+    category: "Casual Wear",
+    image: casualEspressoMonogram,
+    priceFrom: 80000,
+    priceTo: 80000,
+    description:
+      "Espresso-brown short-sleeve senator set with tonal monogram embroidery down the placket — refined ease for daytime occasions.",
+    details: [
+      "Premium suiting fabric",
+      "Tonal monogram embroidery",
+      "Two-piece (shirt + trouser)",
+      "Tailored relaxed fit",
+    ],
+  },
+  {
+    id: "senator-navy-blue-duo",
+    name: "Navy & Cobalt Senator Duo",
+    category: "Casual Wear",
+    image: senatorNavyDuo,
+    priceFrom: 80000,
+    priceTo: 80000,
+    description:
+      "Tailored senator set in deep navy with tonal placket embroidery and a structured chest pocket — refined everyday regality.",
+    details: [
+      "Premium suiting fabric",
+      "Tonal embroidered placket",
+      "Structured chest pocket",
+      "Two-piece (top + trouser)",
+    ],
+  },
+  {
     id: "senator-rose-pocket",
     name: "Rose Quartz Senator",
     category: "Casual Wear",
     image: senatorRosePocket,
-    priceFrom: 115000,
-    priceTo: 165000,
+    priceFrom: 80000,
+    priceTo: 80000,
     description:
       "Soft rose quartz short-sleeve senator with linear tonal pocket detail — modern ease in a refined palette.",
     details: [
