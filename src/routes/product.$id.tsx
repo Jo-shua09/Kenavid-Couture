@@ -45,7 +45,7 @@ export const Route = createFileRoute("/product/$id")({
                 highPrice: loaderData.product.priceTo,
                 priceCurrency: "NGN",
                 availability: "https://schema.org/InStock",
-                url: `https://kenavidcouture.vercel.app/product/${loaderData.product.id}`,
+                url: `https://www.kenavidcouture.com/product/${loaderData.product.id}`,
               },
             }),
           },

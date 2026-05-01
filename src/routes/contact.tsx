@@ -22,7 +22,7 @@ export const Route = createFileRoute("/contact")({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
           name: "Kenavid Couture Atelier",
-          image: "https://kenavidcouture.vercel.app/logo.png",
+          image: "https://www.kenavidcouture.com/logo.png",
           telephone: ["+234 803 459 3315", "+234 704 985 2224"],
           address: {
             "@type": "PostalAddress",
@@ -37,7 +37,7 @@ export const Route = createFileRoute("/contact")({
             opens: "08:00",
             closes: "19:00",
           },
-          url: "https://kenavidcouture.vercel.app/contact",
+          url: "https://www.kenavidcouture.com/contact",
         }),
       },
     ],

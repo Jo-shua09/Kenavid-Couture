@@ -28,7 +28,7 @@ export const Route = createFileRoute("/about")({
               "@type": "Person",
               name: "Victor Atoyebi",
             },
-            url: "https://kenavidcouture.vercel.app/about",
+            url: "https://www.kenavidcouture.com/about",
           },
         }),
       },

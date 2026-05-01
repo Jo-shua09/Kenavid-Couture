@@ -26,7 +26,7 @@ export const Route = createFileRoute("/shop")({
           name: "Shop - Kenavid Couture",
           description:
             "Browse the Kenavid Couture collection - agbada, kaftan, casual wear and signature monogram designs.",
-          url: "https://kenavidcouture.vercel.app/shop",
+          url: "https://www.kenavidcouture.com/shop",
         }),
       },
     ],
