@@ -227,7 +227,7 @@ export const products: Product[] = [
   },
   {
     id: "kaftan-teal-medallion",
-    name: "Teal Medallion Kaftan Robe",
+    name: "Teal Medallion Agbada Robe",
     category: "Agbada",
     image: kaftanTealMedallion,
     priceFrom: 150000,
